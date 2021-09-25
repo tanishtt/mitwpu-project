@@ -1,0 +1,24 @@
+/*-----------first view page-----------------*/
+.header{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-imag1-1.jpg);
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
+#mitwpu-main-logo{
+    background-size: contain;
+    height: 14vh;
+    width: 20vw;
+    border-radius:  0 0 0.5rem;
+}
+#mitwpu-main-logo:hover{
+box-shadow: 0.3rem 0.3rem 0.4rem 0rem rgb(7, 7, 7);
+border-radius: 0 0 0.8rem;
+
+}
+
+
+
+
