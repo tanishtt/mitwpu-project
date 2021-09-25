@@ -1,16 +1,20 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+body{
+    padding: 0;
+    margin: 0;
+}
 
 /*-----------first view page-----------------*/
-.header{
+/* .header{
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-imag1-1.jpg);
     background-position: center;
     position: relative;
     background-size: cover;
-}
+} */
 #mitwpu-main-logo{
     background-size: contain;
     height: 14vh;
@@ -22,12 +26,17 @@ box-shadow: 0.3rem 0.3rem 0.4rem 0rem rgb(7, 7, 7);
 border-radius: 0 0 0.8rem;
 
 }
-.header nav{
-    
+/* .header*/
+nav{ 
+    position: absolute;
     display: flex;
-    padding: 0.5% 1%;
+    /* padding: 0.5% 1%; */
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
+    width: 100%;
+    padding-right:3%;
+
 
 }
 .nav-links{
@@ -37,11 +46,12 @@ border-radius: 0 0 0.8rem;
 .nav-links ul li{
     list-style: none;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 8px 15px;
 }
 .nav-links ul li a{
     color: white;
     text-decoration: none;
+    font-size: 1.3rem;
 }
 .nav-links ul li::after{
     content: '';
@@ -55,6 +65,140 @@ border-radius: 0 0 0.8rem;
 .nav-links ul li:hover::after{
     width: 100%;
 }
+/*--------slider------------*/
+/* .slider{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.slider figure div img{
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+.slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    animation: animate 20s infinite;
+}
+.slider figure div{
+    float: left;
+    width: 20%;
+}
+p{
+    position: fixed;
+    color: white;
+    font-size: 700px;
+    text-align: center;
+    padding-top: 250px;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+
+}
+@keyframes animate{
+    0%{left:0%;}
+    10%{left:0%;}
+    12%{left:-100%;}
+    22%{left:-100%;}
+    24%{left:-200%;}
+    34%{left:-200%;}
+    36%{left:-300%;}
+    46%{left:-300%;}
+    48%{left:-400%;}
+    58%{left:-400%;}
+    60%{left:-300%;}
+    70%{left:-300%;}
+    72%{left:-200%;}
+    82%{left:-200%;}
+    84%{left:-100%;}
+    94%{left:-100%;}
+    96%{left:0;}
+} */
+.home-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+
+}
+.home-container .home-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500%;
+    height: 100%;
+    animation: animate 20s infinite;
+}
+.home-container .home-slider .slide{
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: relative;
+}
+.home-container .home-slider .slide .sliding-content{
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    padding: 30px;
+    background: rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+.sliding-content p{
+    font-size: 1.5rem;
+    color: white;
+}
+.slide1{
+    background: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-imag1-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide2{
+    background:linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)), url(images/mitwpu-full-image-3.png);
+    background-size: cover;
+    background-position: center;
+}
+.slide3{
+    background: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-image-4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.slide4{
+    background:linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-image-5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.slide5{
+    background: linear-gradient(rgba(4, 9, 30, 0.6),rgba(4,9,30,0.7)),url(images/mitwpu-full-image-6.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+@keyframes animate{
+    0%{left:0%;}
+    10%{left:0%;}
+    12%{left:-100%;}
+    22%{left:-100%;}
+    24%{left:-200%;}
+    34%{left:-200%;}
+    36%{left:-300%;}
+    46%{left:-300%;}
+    48%{left:-400%;}
+    58%{left:-400%;}
+    60%{left:-300%;}
+    70%{left:-300%;}
+    72%{left:-200%;}
+    82%{left:-200%;}
+    84%{left:-100%;}
+    94%{left:-100%;}
+    96%{left:0;}
+}
+
+
 
 
 
