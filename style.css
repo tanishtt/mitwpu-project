@@ -17,13 +17,14 @@ body{
 } */
 #mitwpu-main-logo{
     background-size: contain;
-    height: 14vh;
-    width: 20vw;
+    height: 24vh;
+    width: 10vw;
     border-radius:  0 0 0.5rem;
+    padding-left: 2.5vw;
 }
 #mitwpu-main-logo:hover{
 box-shadow: 0.3rem 0.3rem 0.4rem 0rem rgb(7, 7, 7);
-border-radius: 0 0 0.8rem;
+border-radius:0.8rem;
 
 }
 /* .header*/
