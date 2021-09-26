@@ -17,10 +17,11 @@ body{
 } */
 #mitwpu-main-logo{
     background-size: contain;
-    height: 24vh;
-    width: 10vw;
+    height: 22vh;
+    width: 9vw;
     border-radius:  0 0 0.5rem;
     padding-left: 2.5vw;
+    margin-top: 12vh;
 }
 #mitwpu-main-logo:hover{
 box-shadow: 0.3rem 0.3rem 0.4rem 0rem rgb(7, 7, 7);
@@ -37,6 +38,7 @@ nav{
     z-index: 2;
     width: 100%;
     padding-right:3%;
+    height: 10vh;
 
 
 }
@@ -66,60 +68,7 @@ nav{
 .nav-links ul li:hover::after{
     width: 100%;
 }
-/*--------slider------------*/
-/* .slider{
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-.slider figure div img{
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    float: left;
-}
-.slider figure{
-    position: relative;
-    width: 500%;
-    margin: 0;
-    animation: animate 20s infinite;
-}
-.slider figure div{
-    float: left;
-    width: 20%;
-}
-p{
-    position: fixed;
-    color: white;
-    font-size: 700px;
-    text-align: center;
-    padding-top: 250px;
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100vh;
 
-}
-@keyframes animate{
-    0%{left:0%;}
-    10%{left:0%;}
-    12%{left:-100%;}
-    22%{left:-100%;}
-    24%{left:-200%;}
-    34%{left:-200%;}
-    36%{left:-300%;}
-    46%{left:-300%;}
-    48%{left:-400%;}
-    58%{left:-400%;}
-    60%{left:-300%;}
-    70%{left:-300%;}
-    72%{left:-200%;}
-    82%{left:-200%;}
-    84%{left:-100%;}
-    94%{left:-100%;}
-    96%{left:0;}
-} */
 .home-container{
     position: relative;
     width: 100%;
@@ -133,7 +82,7 @@ p{
     left: 0;
     width: 500%;
     height: 100%;
-    animation: animate 20s infinite;
+    animation: animate 25s infinite;
 }
 .home-container .home-slider .slide{
     float: left;
@@ -143,15 +92,34 @@ p{
 }
 .home-container .home-slider .slide .sliding-content{
     position: absolute;
-    bottom: 60px;
+    /* bottom: 60px;
     left: 60px;
     right: 60px;
-    padding: 30px;
-    background: rgba(0,0,0,0.3);
-    box-sizing: border-box;
+    padding: 30px; */
+    width: 70%;
+    left: 50%;
+    top: 60%;
+    text-align: center;
+    
+    transform: translate(-50%,-50%);
+    /* background: rgba(0,0,0,0.3); */
+    /* box-sizing: border-box; */
+}
+.sliding-content h1{
+    color: white;
+    font-size: 200%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.sliding-content h1 b{
+    color: white;
+    font-size: 245%;
+}
+/*----*/
+#heading-3rd span{
+    font-size: 150%;
 }
 .sliding-content p{
-    font-size: 1.5rem;
+    font-size: 80%;
     color: white;
 }
 .slide1{
@@ -197,6 +165,42 @@ p{
     84%{left:-100%;}
     94%{left:-100%;}
     96%{left:0;}
+}
+/*--------------apply-enquiry-------------*/
+.apply{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 45px;
+    font-size: 1.1rem;
+    position: relative;
+    margin: 5px;
+cursor: pointer;
+color: white;
+font-weight: 700;
+background-color: #ec1c3b;
+border: 0;
+}
+.apply:hover{
+    box-shadow: 3px 3px 6px 2px black;
+    transition: 0.2s;
+}
+.enquire{
+    display: inline-block;
+    text-decoration: none;
+    border: 0;
+    padding: 12px 34px;
+    font-size: 1.1rem;
+    position: relative;
+    margin: 5px;
+    font-weight: 700;
+cursor: pointer;
+color: white;
+background-color: #2c3883;
+}
+.enquire:hover{
+    box-shadow: 3px 3px 6px 2px black;
+    transition: 0.2s;
 }
 
 
