@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c8060b37c5.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="slider__()">
     <!-- <section class="header">
         <nav>
             <a href="index.html"><img id="mitwpu-main-logo" src="images/mitwpu-logo.jpg"></a>
@@ -28,10 +29,12 @@
 
 
     </section> -->
-    <div class="home-container">
+    <!-- <div class="home-container">
+
             <nav>
                 <a href="index.html"><img id="mitwpu-main-logo" src="images/mitwpu-logo-on-site.png"></a>
-                <div class="nav-links">
+                <div class="nav-links" id="nav__links">
+                    <i class="fas fa-times-circle" onclick="hideMenu()"></i>
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="">ABOUT</a></li>
@@ -39,6 +42,7 @@
                         <li><a href="">CONTACT</a></li>
                     </ul>
                 </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
             </nav>
         <div class="home-slider">
             <div class="slide slide1">
@@ -133,9 +137,103 @@
     </div>
 
 
+    
+<script>
+    
+</script> -->
+<section >
+    <div class="home">
+        <div class="slider">
+            <img id="slide_img" src="images/mitwpu-full-imag1-1.jpg">
+        </div>
+        <div class="overlay">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img id="mitwpu-main-logo" src="images/mitwpu-logo-on-site.png"></a>
+                </div>
+                <div class="nav-links" id="nav__links">
+                    <i class="fas fa-times-circle" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">FACILITIES</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="home-content">
+                <h1 id="heading-3rd">
+                    <span>Build Your Career With MIT-WPU</span> <b>#LearntoLead</b>
+                </h1>
+                <p >Multidisciplinary approach towards providing 
+                    quality education to our students. <br>We employ our 
+                    well researched WPU Method which provides a perfect 
+                    balance of an Academic Framework reinforced by 
+                    experiential learning.</p>
+                    <div class="apply-enquire">
+                        <a href="" class="apply">Apply</a>
+                        <a href="" class="enquire">Enquire</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
     <div class="why">
 
-    </div>
+        <section>
+        <div class="why-mitwpu-heading">
+            <h1>“Union of Science and Spirituality alone
+                will bring peace to mankind”</h1>
+        </div>
+        <div class="why-mission">
 
+            <h1>Mission</h1>
+            <p>To be a leading University of 
+                Excellence, promoting the “Culture of Peace” through Value-based “Universal Education System”, with a firm belief that “Union of Science 
+                and Spirituality alone will bring peace to 
+                mankind”</p>
+
+        </div>
+        <div class="why-why">
+
+            <h1>Why choose MIT-WPU</h1>
+            <div><i class="fas fa-user-graduate"></i></div>
+            <div><i class="fas fa-building"></i></div>
+            <div><i class="fas fa-chalkboard-teacher"></i></div>
+            <div><i class="far fa-id-card"></i></div>
+            <div><i class="fas fa-briefcase"></i></div>
+        </div>
+        </section>
+    </div>
+</section>
+
+<script>
+    var slide_img=document.getElementById("slide_img");
+    var image=new Array(
+        "images/mitwpu-full-imag1-1.jpg",
+        "images/mitwpu-full-image-5.jpeg",
+        "images/mitwpu-full-image-3.png",
+        "images/mitwpu-full-image-4.jpg"
+);
+var len=image.length;
+var i=0;
+function slider__(){
+    if(i>len-1){
+        i=0;
+    }
+    slide_img.src=image[i];
+    i++;
+    setTimeout('slider__()',3000);
+
+}
+var nav__links=document.getElementById("nav__links");
+    function showMenu(){
+        nav__links.style.right="0";
+    }
+    function hideMenu(){
+        nav__links.style.right="-200px";
+    }
+</script>
 </body>
 </html>
