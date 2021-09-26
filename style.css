@@ -37,7 +37,7 @@ nav{
     align-items: center;
     z-index: 2;
     width: 100%;
-    padding-right:3%;
+    /* padding-right:3%; */
     height: 10vh;
 
 
@@ -109,6 +109,7 @@ nav{
     color: white;
     font-size: 200%;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    
 }
 .sliding-content h1 b{
     color: white;
@@ -165,6 +166,7 @@ nav{
     84%{left:-100%;}
     94%{left:-100%;}
     96%{left:0;}
+   
 }
 /*--------------apply-enquiry-------------*/
 .apply{
